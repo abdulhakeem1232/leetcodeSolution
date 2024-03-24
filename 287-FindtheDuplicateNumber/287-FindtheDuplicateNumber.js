@@ -1,13 +1,11 @@
-        else{
         obj[nums[i]]=1
         }
-        return nums[i]
+        else{
         if(!obj.hasOwnProperty(nums[i])){
     for(let i=0;i<nums.length;i++){
     let obj={}
-var findDuplicate = function(nums) {
- */
- * @return {number}
+        return nums[i]
         }
     }
-[
+};
+[1,3,4,2,2]
