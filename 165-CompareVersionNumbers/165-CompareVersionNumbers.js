@@ -1,15 +1,11 @@
-  let arr1=version1.split('.')
-var compareVersion = function (version1, version2) {
- */
- * @return {number}
-  let arr2=version2.split('.')
-  let max=Math.max(arr1.length,arr2.length)
-  for(let i=0;i<max;i++){
-    let num1=i<arr1.length?parseInt(arr1[i]):0
-  }
-    return 0
-    let num2=i<arr2.length?parseInt(arr2[i]):0
-    if(num1>num2) return 1
-    else if(num1<num2) return -1
+        version1=version1.replaceAll('..', '.')
+    }
+    while (version2.includes('..') ) {
+        version2=version2.replaceAll('..', '.')
+    }
+console.log(version1,version2)
+    if (version1 > version2) return 1
+    else if (parseInt(version2) == parseInt(version1)) return 0
+    else return -1
 };
 "
